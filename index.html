@@ -9,15 +9,21 @@
     <style>
       body {
         background-color: #f2f2f2;
-        font-family: Arial, sans-serif;
+        font-family: 'Roboto Slab';
         margin: 0;
         padding: 0;
+      }
+      .logo {
+        height: 60px;
+        display: flex;
+        justify-content: left;
+        align-items: center;
       }
       .header {
         background-color: #1d1e22;
         height: 60px;
         display: flex;
-        justify-content: center;
+        justify-content: right;
         align-items: center;
       }
       .header a {
@@ -26,7 +32,7 @@
         margin-right: 20px;
       }
       .header a:last-child {
-        margin-right: 0;
+        margin-right: 40px;
       }
       .header a:hover {
         color: #828282;
@@ -38,8 +44,8 @@
         padding: 40px;
       }
       .photo-canvas {
-        width: 100%;
-        height: 100%;
+        width: 300px;
+        height: 3300px;
         background-color: #fff;
         transition: all 0.5s ease-in-out;
         overflow: hidden;
@@ -48,8 +54,8 @@
         align-items: center;
       }
       .photo-canvas img {
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
         object-fit: contain;
       }
       .photo-canvas:hover {
@@ -60,7 +66,7 @@
   </head>
   <body>
     <header class="header">
-      <a href="#">Home</a>
+      <a href="#">Works</a>
       <a href="#">About</a>
       <a href="#">Contact</a>
     </header>
