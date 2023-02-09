@@ -1,61 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>My Photography Portfolio</title>
-  <style>
-    header {
-      background-color: #87CEFA;
-    }
-
-    footer {
-      background-color: #E6E6E6;
-    }
-  </style>
-</head>
-<body>
-  <header class="py-5">
-    <div class="container">
-      <h1 class="text-center text-white">My Photography Portfolio</h1>
-    </div>
-  </header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">Home</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nikita Lukyanov Photography</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <style>
+      body {
+        background-color: #f2f2f2;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        background-color: #1d1e22;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+      .header a:last-child {
+        margin-right: 0;
+      }
+      .header a:hover {
+        color: #828282;
+      }
+      .photo-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 20px;
+        padding: 40px;
+      }
+      .photo-canvas {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+      }
+      .photo-canvas:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </header>
+    <main>
+      <div class="photo-grid container">
+        <div class="photo-canvas">
+          <img src="./res/IMG_7341.jpg"/>
+        </div>
+        <div class="photo-canvas">
+          <img src="./res/IMG_7341.jpg"/>
+        </div>
+        <div class="photo-canvas">
+          <img src="./res/IMG_7341.jpg"/>
+        </div>
+        <div class="photo-canvas">
+          <img src="./res/IMG_7341.jpg"/>
+        </div>
       </div>
-    </div>
-  </nav>
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-md-4">
-        <img src="image1.jpg" class="img-fluid" alt="Image 1">
-      </div>
-      <div class="col-md-4">
-        <img src="image2.jpg" class="img-fluid" alt="Image 2">
-      </div>
-      <div class="col-md-4">
-        <img src="image3.jpg" class="img-fluid" alt="Image 3">
-      </div>
-    </div>
-  </div>
-  <footer class="py-3">
-    <div class="container">
-      <p class="text-center">© My Photography Portfolio 2023</p>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/
+    </main>
+  </body>
+</html>
