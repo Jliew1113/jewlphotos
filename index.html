@@ -13,12 +13,6 @@
         margin: 0;
         padding: 0;
       }
-      .logo {
-        height: 60px;
-        display: flex;
-        justify-content: left;
-        align-items: center;
-      }
       .header {
         background-color: #1d1e22;
         height: 60px;
@@ -60,37 +54,81 @@
         object-fit: contain;
       }
       .photo-canvas:hover {
-        transform: translateY(-20px) rotateX(30deg);
-        box-shadow: 0 40px 40px rgba(0, 0, 0, 0.1);
+        background-color: #918677; /* Grey out the background */
+        opacity: 95%;
+        display: flex; /* To center the details text */
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
+      }
+      .photo-canvas:hover .details { /* Show details on hover */
+        visibility: visible;
+      }
+      .details {
+        visibility: hidden; /* Hide details by default */
+        text-align: center;
+        color: #cfc8bf;
+      }
+      .headings{
+        text-align: center;
+        color: #d79b19;
       }
     </style>
   </head>
   <body>
     <header class="header">
-      <a href="#">Works</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+        <div class="logo">
+        <img src="./logo.png" width="50" height="50">
+      </div>
+      <nav>
+        <a href="#">Works</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
     </header>
     <main>
       <div class="photo-grid container">
         <div class="photo-canvas">
           <img src="./res/IMG_7341.jpg"/>
+          <div class="details">
+            <h3 class="headings">Title of Photo</h3>
+            <p>Description of Photo</p>
+          </div>
         </div>
         <div class="photo-canvas">
           <img src="./res/IMG_7341.jpg"/>
+          <div class="details">
+            <h3 class="headings">Title of Photo</h3>
+            <p>Description of Photo</p>
+          </div>
         </div>
         <div class="photo-canvas">
           <img src="./res/IMG_7341.jpg"/>
+          <div class="details">
+            <h3 class="headings">Title of Photo</h3>
+            <p>Description of Photo</p>
+          </div>
         </div>
         <div class="photo-canvas">
           <img src="./res/IMG_7341.jpg"/>
+          <div class="details">
+            <h3 class="headings">Title of Photo</h3>
+            <p>Description of Photo</p>
+          </div>
         </div>
         <div class="photo-canvas">
           <img src="./res/IMG_7341.jpg"/>
+          <div class="details">
+            <h3 class="headings">Title of Photo</h3>
+            <p>Description of Photo</p>
+          </div>
         </div>
         <div class="photo-canvas">
           <img src="./res/IMG_7341.jpg"/>
+          <div class="details">
+            <h3 class="headings">Title of Photo</h3>
+            <p>Description of Photo</p>
+          </div>
         </div>
       </div>
     </main>
