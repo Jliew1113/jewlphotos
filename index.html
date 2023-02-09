@@ -1,54 +1,61 @@
-<template>
-    <div>
-      <header class="py-5" style="background-color: #87CEFA;">
-        <div class="container">
-          <h1 class="text-center text-white">My Photography Portfolio</h1>
-        </div>
-      </header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">Home</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="container my-5">
-        <div class="row">
-          <div class="col-md-4" v-for="image in images">
-            <img :src="image" class="img-fluid" :alt="'Image ' + image">
-          </div>
-        </div>
-      </div>
-      <footer class="py-3" style="background-color: #E6E6E6;">
-        <div class="container">
-          <p class="text-center">&copy; My Photography Portfolio 2023</p>
-        </div>
-      </footer>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        images: [
-          'image1.jpg',
-          'image2.jpg',
-          'image3.jpg'
-        ]
-      }
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>My Photography Portfolio</title>
+  <style>
+    header {
+      background-color: #87CEFA;
     }
-  }
-  </script>
-  
+
+    footer {
+      background-color: #E6E6E6;
+    }
+  </style>
+</head>
+<body>
+  <header class="py-5">
+    <div class="container">
+      <h1 class="text-center text-white">My Photography Portfolio</h1>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="image1.jpg" class="img-fluid" alt="Image 1">
+      </div>
+      <div class="col-md-4">
+        <img src="image2.jpg" class="img-fluid" alt="Image 2">
+      </div>
+      <div class="col-md-4">
+        <img src="image3.jpg" class="img-fluid" alt="Image 3">
+      </div>
+    </div>
+  </div>
+  <footer class="py-3">
+    <div class="container">
+      <p class="text-center">© My Photography Portfolio 2023</p>
+    </div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/
