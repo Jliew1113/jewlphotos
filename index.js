@@ -3,7 +3,7 @@ var app = new Vue({
     data: {
         isCollapsed: false
     }, 
-})
+});
 
 var app = new Vue({
     el: '#slideshow',
