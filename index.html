@@ -7,8 +7,12 @@
     <title>jewl</title>
     <link href="https://fonts.cdnfonts.com/css/tw-cen-mt-condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<<<<<<< HEAD
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="index.js"></script>
+=======
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+>>>>>>> fd2a7f72243e2877c0f48579e034f5499dc1a5e5
     <style>
       @import url('https://fonts.cdnfonts.com/css/tw-cen-mt-condensed');
       body {
@@ -158,6 +162,31 @@
         <a href="#">contact</a>
       </nav>
     </header>
+    <div id="slideshow">
+      <img :src="currentImage.src" :alt="currentImage.alt" @click="nextImage">
+    </div>
+    <script>
+      var app = new Vue({
+        el: '#slideshow',
+        data: {
+          images: [
+            { src: './res/IMG_7341.jpg', alt: 'Image 1' },
+            { src: './res/IMG_7341.jpg', alt: 'Image 2' }
+          ],
+          currentIndex: 0
+        },
+        computed: {
+          currentImage: function() {
+            return this.images[this.currentIndex];
+          }
+        },
+        methods: {
+          nextImage: function() {
+            this.currentIndex = (this.currentIndex + 1) % this.images.length;
+          }
+        }
+      });
+    </script>
     <main>
       <div class="hero">
         <div class="hero-left">
