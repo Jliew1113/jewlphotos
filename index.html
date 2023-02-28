@@ -75,6 +75,18 @@
       }
     }
 
+    .nav-left {
+      order: 1;
+    }
+
+    .nav-right {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      order: 2;
+    }
+
       .footer {
         background-color: #f6f6f6;
         color: #f6f6f6;
@@ -189,13 +201,17 @@
   <body>
     <header class="header">
       <div class="navbar" :class="{ responsive: isCollapsed }">
-        <a href="#">
-          <img src="./res/logo.png" width="10%" height="10%" alt="logo">
-        </a>
-        <a href="./works.html">works</a>
-        <a href="#">about</a>
-        <a href="#">contact</a>
-        <a class="icon" @click="isCollapsed = !isCollapsed">&#9776;</a>
+        <div class="nav-left"></div>
+          <a href="#">
+            <img src="./res/logo.png" width="10%" height="10%" alt="logo">
+          </a>
+        </div>
+        <div class="nav-right">
+          <a href="./works.html">works</a>
+          <a href="#">about</a>
+          <a href="#">contact</a>
+          <a class="icon" @click="isCollapsed = !isCollapsed">&#9776;</a>
+        </div>
       </div>
     </header>
     <main>
