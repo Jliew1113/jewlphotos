@@ -36,6 +36,63 @@
       .header a:hover {
         color: #d79b19;
       }
+
+      /* Style the navbar */
+    .navbar {
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    /* Change color on hover */
+    .navbar a:hover {
+      color: #d79b19;
+    }
+
+    /* Collapsible navbar */
+    .navbar .icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar a:not(:first-child) {
+        display: none;
+      }
+      .navbar a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    /* Responsive navbar */
+    @media screen and (max-width: 600px) {
+      .navbar.responsive {
+        position: relative;
+      }
+      .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
       .footer {
         background-color: #f6f6f6;
         color: #f6f6f6;
@@ -152,37 +209,16 @@
         <div class="logo">
         <img src="./res/logo.png" width="10%" height="10%" href="#">
       </div>
-      <nav>
+      <div class="navbar" :class="{ responsive: isCollapsed }">
         <a href="./works.html">works</a>
         <a href="#">about</a>
         <a href="#">contact</a>
-      </nav>
+        <a class="icon" @click="isCollapsed = !isCollapsed">&#9776;</a>
+      </div>
     </header>
     <div id="slideshow">
       <img :src="currentImage.src" :alt="currentImage.alt" @click="nextImage">
     </div>
-    <script>
-      var app = new Vue({
-        el: '#slideshow',
-        data: {
-          images: [
-            { src: './res/IMG_7341.jpg', alt: 'Image 1' },
-            { src: './res/IMG_7341.jpg', alt: 'Image 2' }
-          ],
-          currentIndex: 0
-        },
-        computed: {
-          currentImage: function() {
-            return this.images[this.currentIndex];
-          }
-        },
-        methods: {
-          nextImage: function() {
-            this.currentIndex = (this.currentIndex + 1) % this.images.length;
-          }
-        }
-      });
-    </script>
     <main>
       <div class="hero">
         <div class="hero-left">

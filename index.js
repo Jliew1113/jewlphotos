@@ -1,23 +1,27 @@
 var app = new Vue({
     el: '#app',
     data: {
-      message: 'Hello Vue!'
-    },
+        isCollapsed: false
+    }, 
+})
 
-    data() {
-        return {
-          isMobile: false
+var app = new Vue({
+    el: '#slideshow',
+    data: {
+        images: [
+            { src: './res/IMG_7341.jpg', alt: 'Image 1' },
+            { src: './res/IMG_7341.jpg', alt: 'Image 2' }
+        ],
+        currentIndex: 0
+    },
+    computed: {
+        currentImage: function() {
+         return this.images[this.currentIndex];
         }
-    },
-
-    created() {
-        window.addEventListener('resize', this.checkWindowSize)
-        this.checkWindowSize()
     },
     methods: {
-        checkWindowSize() {
-          this.isMobile = window.innerWidth <= 768 // adjust the breakpoint as needed
+        nextImage: function() {
+            this.currentIndex = (this.currentIndex + 1) % this.images.length;
         }
     }
-      
-  })
+});
