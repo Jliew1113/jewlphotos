@@ -1,5 +1,5 @@
 var app = new Vue({
-    el: 'navbar',
+    el: '#navbar',
     data: {
         isCollapsed: false
     }, 
