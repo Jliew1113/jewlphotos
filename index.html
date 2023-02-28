@@ -93,6 +93,18 @@
       margin-right: 20px;
     }
 
+    .navbar.responsive .nav-right {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        width: 100%;
+        display: none;
+        box-sizing: border-box;
+      }
+
       .footer {
         background-color: #f6f6f6;
         color: #f6f6f6;
@@ -213,7 +225,7 @@
             <img src="./res/logo.png" width="10%" height="10%" alt="logo">
           </a>
         </div>
-        <div class="nav-right">
+        <div class="nav-right" :class="{ show: isCollapsed }">
           <a href="./works.html">works</a>
           <a href="#">about</a>
           <a href="#">contact</a>
