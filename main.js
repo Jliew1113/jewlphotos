@@ -1,10 +1,14 @@
 var app = new Vue({
     el: '#app',
     data: {
-      isCollapsed: false
+      showMenu: false
+    },
+    methods: {
+      toggleMenu: function() {
+        this.showMenu = !this.showMenu;
+      }
     }
-  });
-  
+  })  
 
 var app = new Vue({
     el: '#navbar',
