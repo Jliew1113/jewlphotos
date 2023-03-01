@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Hero Images Slideshow</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
             margin: 0;
@@ -130,10 +131,11 @@
       
 
     <script>
-        let images = document.querySelectorAll('.image');
+        
 let featuredIndex = 2;
 
 setInterval(() => {
+    let images = document.querySelectorAll('.image');
   images[featuredIndex].classList.remove('featured');
   featuredIndex = (featuredIndex + 1) % images.length;
   
