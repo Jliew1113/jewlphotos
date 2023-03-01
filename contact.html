@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hero Images Slideshow</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .image {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+        .featured {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="image1.jpg" alt="Image 1">
+        <img class="image" src="image2.jpg" alt="Image 2">
+        <img class="image featured" src="image3.jpg" alt="Image 3">
+        <img class="image" src="image4.jpg" alt="Image 4">
+        <img class="image" src="image5.jpg" alt="Image 5">
+    </div>
+
+    <script>
+        let images = document.querySelectorAll('.image');
+        let featuredIndex = 2;
+
+        setInterval(() => {
+            images[featuredIndex].classList.remove('featured');
+            featuredIndex = (featuredIndex + 1) % images.length;
+            images[featuredIndex].classList.add('featured');
+        },3000);
+    </script>
+</body>
+</html>
