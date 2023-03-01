@@ -74,56 +74,28 @@
              }
         }
         .container {
-            position: relative;
-          }
-          
-          .row {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: calc(2 / 3 * 100%);
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
-          }
-          
-          .row:nth-of-type(1) {
-            position: absolute;
-            top: 50px; /* adjust as necessary */
-            left: 50%;
-            transform: translateX(-50%);
-          }
-          
-          .row:nth-of-type(2) {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-          }
-          
-          .row:nth-of-type(3) {
-            position: absolute;
-            bottom: 50px; /* adjust as necessary */
-            left: 50%;
-            transform: translateX(-50%);
-          }
-          
-          .image {
+        }
+        .row {
+          display:flex;
+          justify-content:center;
+          align-items:center;
+        }
+        .image {
             width: calc(16 / 9 * 200px);
             height: 200px;
             margin: 10px;
-            position: absolute;
-            left: 0;
-            top: 0;
-          }
-          
-          .featured {
+        }
+        .featured {
             width: calc(16 / 9 * 400px);
             height: 400px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 1;
-          }
-          
-          
+        } 
     </style>
 </head>
 <body>
@@ -151,14 +123,13 @@
 
     <script>
         let images = document.querySelectorAll('.image');
-let featuredIndex = 2;
+        let featuredIndex = 1;
 
-setInterval(() => {
-  images[featuredIndex].classList.remove('featured');
-  featuredIndex = (featuredIndex + 1) % images.length;
-  images[featuredIndex].classList.add('featured');
-}, 3000);
-
+        setInterval(() => {
+            images[featuredIndex].classList.remove('featured');
+            featuredIndex = (featuredIndex + 1) % (images.length - 1);
+            images[featuredIndex].classList.add('featured');
+        },3000);
     </script>
 
     <script>function myFunction() {var x = document.getElementById("myTopnav");if (x.className === "topnav") {x.className += " responsive";document.querySelector(".fa").classList.remove("fa-bars");document.querySelector(".fa").classList.add("fa-times");} else {x.className = "topnav";document.querySelector(".fa").classList.remove("fa-times");document.querySelector(".fa").classList.add("fa-bars");}}</script>
