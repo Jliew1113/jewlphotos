@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>works</title>
+  <title>Collapsible Nav Menu with Vue</title>
   <script src="https://cdn.jsdelivr.net/npm/vue"></script>
   <style>
     /* Style the navbar */
@@ -68,12 +68,23 @@
 </head>
 <body>
   <div id="app">
-    <div class="navbar" :class="{ responsive: isCollapsed }">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a class="icon" @click="isCollapsed = !isCollapsed">&#9776;</a>
-    </div>
+    <header class="header">
+      <div id="navbar">
+        <div class="navbar" :class="{ responsive: isCollapsed }">
+          <div class="nav-left">
+            <a href="#">
+              <img src="./res/logo.png" width="10%" height="10%" alt="logo">
+            </a>
+          </div>
+          <div class="nav-right">
+            <a href="./works.html">works</a>
+            <a href="#">about</a>
+            <a href="#">contact</a>
+            <a class="icon" @click="isCollapsed = !isCollapsed">&#9776;</a>
+          </div>
+        </div>
+      </div>
+    </header>
   </div>
 
   <script>
