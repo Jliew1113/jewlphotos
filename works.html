@@ -1,83 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Collapsible Navbar</title>
+	<title>Gallery View</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<style>
-
-.navbar {
-  background-color: #333;
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navbar-toggle {
-  display: none;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.navbar-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
-.navbar-menu li {
-  margin-right: 1rem;
-}
-
-@media (max-width: 600px) {
-  .navbar-menu {
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 1rem;
-    width: 100%;
-  }
-
-  .navbar-toggle {
-    display: block;
-  }
-
-  .navbar-menu.is-expanded {
-    display: flex;
-  }
-}
-
-
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+		}
+		
+		.gallery-item {
+			position: relative;
+			margin-bottom: 20px;
+			width: calc(33.33% - 10px);
+		}
+		
+		.gallery-title {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgba(0, 0, 0, 0.8);
+			color: white;
+			padding: 5px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		
+		.gallery-item:hover .gallery-title {
+			opacity: 1;
+		}
+		
+		.gallery-item img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+		
 	</style>
 </head>
 <body>
-	<header>
-		<nav class="navbar">
-			<button class="navbar-toggle" aria-label="Toggle navigation">
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			  <span class="icon-bar"></span>
-			</button>
-			<ul class="navbar-menu">
-			  <li><a href="#">Home</a></li>
-			  <li><a href="#">About</a></li>
-			  <li><a href="#">Contact</a></li>
-			</ul>
-		  </nav>
-					
-	</header>
-	
-	<script>
-		const navbarToggle = document.querySelector('.navbar-toggle');
-const navbarMenu = document.querySelector('.navbar-menu');
-
-navbarToggle.addEventListener('click', () => {
-  navbarMenu.classList.toggle('is-expanded');
-});
-
-	</script>
+	<div class="gallery">
+		<div class="gallery-item">
+			<img src="./res/IMG_7312.jpg">
+			<div class="gallery-title">Photo 1</div>
+		</div>
+		<div class="gallery-item">
+			<img src="./res/IMG_7312.jp">
+			<div class="gallery-title">Photo 2</div>
+		</div>
+		<div class="gallery-item">
+			<img src="./res/IMG_7312.jp">
+			<div class="gallery-title">Photo 3</div>
+		</div>
+		<div class="gallery-item">
+			<img src="./res/IMG_7312.jp">
+			<div class="gallery-title">Photo 4</div>
+		</div>
+		<div class="gallery-item">
+			<img src="./res/IMG_7312.jp">
+			<div class="gallery-title">Photo 5</div>
+		</div>
+		<div class="gallery-item">
+			<img src="./res/IMG_7312.jp">
+			<div class="gallery-title">Photo 6</div>
+		</div>
+	</div>
 </body>
 </html>
