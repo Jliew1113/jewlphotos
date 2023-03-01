@@ -74,17 +74,21 @@
              }
         }
         .container {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: calc(2 / 3 * 100%);
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
         }
         .image {
-            width: 200px;
+            width: calc(16 / 9 * 200px);
             height: 200px;
             margin: 10px;
         }
         .featured {
-            width: 400px;
+            width: calc(16 / 9 * 400px);
             height: 400px;
         }
     </style>
