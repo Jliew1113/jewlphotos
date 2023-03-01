@@ -103,7 +103,6 @@
         .featured {
             width: calc(16 / 9 * 400px);
             height: 400px;
-            border: 2px solid #d79b19;
         } 
     </style>
 </head>
@@ -136,18 +135,23 @@
 let featuredIndex = 2;
 
 setInterval(() => {
-    let images = document.querySelectorAll('.image');
+    let featuredIndex = 2;
+
+setInterval(() => {
+  let images = document.querySelectorAll('.image');
+  let middleIndex = Array.from(images).findIndex((img) => img.parentNode.classList.contains('middle-row'));
+  
   images[featuredIndex].classList.remove('featured');
+  
   featuredIndex = (featuredIndex + 1) % images.length;
   
-  if (featuredIndex === 2) { // check if featured image is in the middle row
+  if (featuredIndex === middleIndex) {
     images[featuredIndex].classList.add('featured');
   } else {
-    // find the index of the image in the middle row
-    let middleIndex = Array.from(images).findIndex((img) => img.parentNode.classList.contains('middle-row'));
     images[middleIndex].classList.add('featured');
   }
-}, 3000);
+}, 2000);
+
 
     </script>
 
