@@ -5,19 +5,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #ffffff;
 }
 
 .topnav a {
   float: right;
   display: block;
-  color: #f2f2f2;
+  color: #272727;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -28,7 +29,7 @@ body {
 }
 
 .topnav a:hover {
-    background-color:#111; 
+    background-color:#d79b19; 
 }
 
 .topnav .icon {
@@ -52,7 +53,16 @@ body {
     }
 }
 @media screen and (max-width:600px) {
-    .topnav.responsive {position:relative;}
+    .topnav.responsive {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: #918677;
+        backdrop-filter: blur(5px);
+    }
     .topnav.responsive .icon{
         position:absolute;right:0;top:0; 
     }
