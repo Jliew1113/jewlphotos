@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Hero Images Slideshow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body {
@@ -116,6 +117,7 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i></a>
     </div>
+    <script>function myFunction() {var x = document.getElementById("myTopnav");if (x.className === "topnav") {x.className += " responsive";document.querySelector(".fa").classList.remove("fa-bars");document.querySelector(".fa").classList.add("fa-times");} else {x.className = "topnav";document.querySelector(".fa").classList.remove("fa-times");document.querySelector(".fa").classList.add("fa-bars");}}</script>
     <div class="container">
         <div class="row">
           <img class="image" src="./res/IMG_6374.jpg" alt="Image 1">
@@ -150,7 +152,5 @@
           }
         }, 3000);
     </script>
-
-    <script>function myFunction() {var x = document.getElementById("myTopnav");if (x.className === "topnav") {x.className += " responsive";document.querySelector(".fa").classList.remove("fa-bars");document.querySelector(".fa").classList.add("fa-times");} else {x.className = "topnav";document.querySelector(".fa").classList.remove("fa-times");document.querySelector(".fa").classList.add("fa-bars");}}</script>
 </body>
 </html>
