@@ -135,6 +135,7 @@
         let featuredIndex = 2;
 
         setInterval(() => {
+            console.log('myFunction called');
           let images = document.querySelectorAll('.image');
           let middleIndex = Array.from(images).findIndex((img) => img.parentNode.classList.contains('middle-row'));
           
