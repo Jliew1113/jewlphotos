@@ -14,7 +14,7 @@ body {
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
@@ -22,14 +22,17 @@ body {
   text-decoration: none;
 }
 
+.topnav a.home {
+    float:left; 
+}
+
 .topnav a:hover {
-  background-color: #111;
+    background-color:#111; 
 }
 
 .topnav .icon {
-  display: none;
+    display:none; 
 }
-
 @media screen and (max-width:600px) {
     .topnav a:not(:first-child) {display:none;}
     .topnav a.icon {
@@ -50,13 +53,13 @@ body {
 <body>
 
 <div class="topnav" id="myTopnav">
-<a href="#home">Home</a>
-<a href="#news">News</a>
-<a href="#contact">Contact</a>
+<a href="#home" class="home">Home</a>
 <a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="#news">News</a>
 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 <i class="fa fa-bars"></i></a></div>
 
 <script>function myFunction() {var x = document.getElementById("myTopnav");if (x.className === "topnav") {x.className += " responsive";} else {x.className = "topnav";}}</script>
 
-<h2>Responsive Top Navigation Menu Example</h2><p>Resize the browser window to see how it works.</p><p>Click on the icon in the top right corner to expand the menu.</p></body></html>
+<h2>Responsive Top Navigation Menu Example</h2><p>Resize the browser window to see how it works.</p><p>Click on the icon in the top right corner to expand the menu.</p><button onclick="changeColor()">Change Color</button><script>function changeColor() {document.body.style.backgroundColor = document.body.style.backgroundColor == 'blue' ? 'white' : 'blue';}</script></body></html>
