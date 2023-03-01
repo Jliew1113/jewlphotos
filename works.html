@@ -5,34 +5,61 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Collapsible Navbar</title>
 	<style>
-	nav {
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu {
-  display: none;
+ul {
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.menu li {
-  margin-bottom: 1rem;
+li {
+  margin: 0 1rem;
 }
 
-.menu li:last-child {
-  margin-bottom: 0;
+a {
+  color: #333;
+  text-decoration: none;
 }
 
 .menu-toggle {
-  background: transparent;
+  display: none;
+  font-size: 1.2rem;
+  background-color: transparent;
   border: none;
-  color: #333;
   cursor: pointer;
-  font-size: 1.25rem;
-  padding: 1rem;
+}
+
+@media (max-width: 600px) {
+  ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 1rem;
+    z-index: 1;
+  }
+
+  li {
+    margin: 1rem 0;
+  }
+
+  a {
+    color: white;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
 	</style>
@@ -40,12 +67,15 @@
 <body>
 	<header>
 		<nav>
-			<button class="menu-toggle" aria-label="Menu">Menu</button>
-			<ul class="menu">
+			<ul>
 			  <li><a href="#">Home</a></li>
 			  <li><a href="#">About</a></li>
+			  <li><a href="#">Services</a></li>
 			  <li><a href="#">Contact</a></li>
 			</ul>
+			<button class="menu-toggle" aria-controls="menu" aria-expanded="false">
+			  Menu
+			</button>
 		  </nav>		  
 	</header>
 	
