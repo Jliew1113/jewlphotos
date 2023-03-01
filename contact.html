@@ -132,27 +132,23 @@
 
     <script>
         
-let featuredIndex = 2;
+        let featuredIndex = 2;
 
-setInterval(() => {
-    let featuredIndex = 2;
-
-setInterval(() => {
-  let images = document.querySelectorAll('.image');
-  let middleIndex = Array.from(images).findIndex((img) => img.parentNode.classList.contains('middle-row'));
-  
-  images[featuredIndex].classList.remove('featured');
-  
-  featuredIndex = (featuredIndex + 1) % images.length;
-  
-  if (featuredIndex === middleIndex) {
-    images[featuredIndex].classList.add('featured');
-  } else {
-    images[middleIndex].classList.add('featured');
-  }
-}, 2000);
-
-
+        setInterval(() => {
+          let images = document.querySelectorAll('.image');
+          let middleIndex = Array.from(images).findIndex((img) => img.parentNode.classList.contains('middle-row'));
+          
+          images[featuredIndex].classList.remove('featured');
+          
+          featuredIndex = (featuredIndex + 1) % images.length;
+          
+          if (featuredIndex === middleIndex) {
+            images[featuredIndex].classList.add('featured');
+          } else {
+            images[middleIndex].classList.add('featured');
+          }
+        }, 3000);
+        
     </script>
 
     <script>function myFunction() {var x = document.getElementById("myTopnav");if (x.className === "topnav") {x.className += " responsive";document.querySelector(".fa").classList.remove("fa-bars");document.querySelector(".fa").classList.add("fa-times");} else {x.className = "topnav";document.querySelector(".fa").classList.remove("fa-times");document.querySelector(".fa").classList.add("fa-bars");}}</script>
