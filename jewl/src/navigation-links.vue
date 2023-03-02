@@ -33,6 +33,7 @@ export default {
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: right;
 }
 .navigation-links-text1 {
   margin-left: var(--dl-space-space-twounits);

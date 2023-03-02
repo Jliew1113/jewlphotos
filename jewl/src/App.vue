@@ -3,7 +3,7 @@
     <header data-role="Header" class="home-header">
       <img
         alt="logo"
-        src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+        src="./assets/logo copy.png"
         class="home-image"
       />
       <div class="home-nav">
