@@ -3,7 +3,7 @@
     <header data-role="Header" class="home-header">
       <img
         alt="logo"
-        src="./assets/logo copy.png"
+        src="./assets/jewl-logo.png"
         class="home-image"
       />
       <div class="home-nav">
@@ -244,7 +244,7 @@ export default {
 }
 .home-nav {
   flex: 0 0 auto;
-  display: flex;
+  display: block;
   align-items: center;
   flex-direction: row;
 }
