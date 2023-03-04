@@ -223,6 +223,7 @@
   .page-container3 {
     width: 100%;
     height: 192px;
+    position: absolute;
   }
   .page-text {
     font-size: 2em;
@@ -233,6 +234,7 @@
     width: 100%;
     height: 1161px;
     position: absolute;
+    overflow-y: hidden;
   }
   .page-footer {
     height: auto;
