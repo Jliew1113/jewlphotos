@@ -41,7 +41,7 @@
 }
 
 .page-container {
-  width: 100%;
+  width: 100vh;
   display: flex;
   overflow: auto;
   min-height: 100vh;
@@ -49,7 +49,7 @@
   flex-direction: column;
 }
 .page-header {
-  width: 100%;
+  width: 100vh;
   height: 16px;
   display: flex;
   max-width: 100%;
@@ -80,7 +80,7 @@
 .page-mobile-menu {
   top: 0px;
   left: 0px;
-  width: 100%;
+  width: 100vh;
   height: 100vh;
   display: none;
   padding: 32px;
@@ -96,7 +96,7 @@
   flex-direction: column;
 }
 .page-container1 {
-  width: 100%;
+  width: 100vh;
   display: flex;
   align-items: center;
   margin-bottom: 48px;
@@ -129,7 +129,7 @@
   height: 16px;
 }
 .page-container2 {
-  width: 100%;
+  width: 100vh;
   height: auto;
   display: flex;
   align-items: flex-start;
@@ -159,7 +159,7 @@
   overflow-y: scroll; /* Add a vertical scrollbar if needed */
 }
 .page-footer {
-  width: 100%;
+  width: 100vh;
   height: 64px;
   display: flex;
   max-width: 100%;
