@@ -41,7 +41,7 @@
 }
 .page-header {
   width: 100%;
-  height: 16px;
+  height: 10vh;
   display: flex;
   max-width: 100%;
   align-items: center;
@@ -160,16 +160,6 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
-@media(max-width: 1200px) {
-  .page-header {
-    height: 60px;
-  }
-}
-@media(max-width: 991px) {
-  .page-container2 {
-    height: 873px;
-  }
 }
 @media(max-width: 875px) {
   .page-container3 {
