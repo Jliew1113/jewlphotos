@@ -216,22 +216,26 @@
     padding: 16px;
   }
   .page-container2 {
-    height: 1355px;
+    height: 90vh;
+    display: flex;
     position: relative;
   }
   .page-container3 {
     width: 100%;
-    height: 192px;
+    height: 100%;
+    top: 0;
+    position: sticky;
   }
   .page-text {
     font-size: 2em;
   }
   .page-container4 {
-    top: 190px;
+    flex: 1;
     left: 0px;
     width: 100%;
-    height: 1161px;
+    height: 100%;
     position: absolute;
+    overflow-y: scroll;
   }
   .page-footer {
     height: auto;
