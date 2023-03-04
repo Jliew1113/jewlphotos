@@ -28,15 +28,15 @@
       flex-direction: column;
     }
     .navigation-links-text {
-      margin-bottom: 5px;
+      margin-bottom: 16px;
     }
     .navigation-links-text1 {
-      margin-left: 10px;
-      margin-bottom: 5px;
+      margin-left: 20px;
+      margin-bottom: 16px;
     }
     .navigation-links-text2 {
-      margin-left: 10px;
-      margin-bottom: 5px;
+      margin-left: 20px;
+      margin-bottom: 16px;
     }
   }
   
