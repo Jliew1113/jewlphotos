@@ -20,6 +20,8 @@
 
 
 
+
+
 @media(max-width: 767px) {
   .navigation-links-nav {
     align-items: flex-start;
@@ -194,6 +196,9 @@
     align-items: center;
     justify-content: center;
   }
+  .page-text {
+    font-size: 1.5em;
+  }
   .page-footer {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -218,6 +223,9 @@
   .page-container3 {
     width: 100%;
     height: var(--dl-size-size-xlarge);
+  }
+  .page-text {
+    font-size: 2em;
   }
   .page-container4 {
     top: 190px;
