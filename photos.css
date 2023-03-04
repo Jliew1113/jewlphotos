@@ -136,6 +136,7 @@
   position: sticky;
   width: 20%;
   height: 90vh;
+  padding-left: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
