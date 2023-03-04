@@ -1,8 +1,8 @@
 <template>
   <nav class="navigation-links-nav" v-bind:class="rootClassName">
-    <span class="navigation-links-text">{{ text }}</span>
-    <span class="navigation-links-text1">{{ text1 }}</span>
-    <span class="navigation-links-text2">{{ text3 }}</span>
+    <a class="navigation-links-text">{{ text }}</a>
+    <a class="navigation-links-text1">{{ text1 }}</a>
+    <a class="navigation-links-text2">{{ text3 }}</a>
   </nav>
 </template>
 
@@ -31,38 +31,28 @@ export default {
 .navigation-links-nav {
   flex: 0 0 auto;
   display: flex;
-  align-items: center;
+  color: #272727;
+  align-items: flex-start; /* set alignment to flex-start */
+  text-align: center;
   flex-direction: row;
 }
+
+.navigation-links-nav a {
+  display: inline-block; /* use inline-block instead of block */
+  height: 40px; /* set a fixed height */
+  line-height: 40px; /* set line-height equal to height */
+}
+
+.navigation-links-nav a:hover{
+  color: #d79b19;
+}
+
 .navigation-links-text1 {
-  margin-left: var(--dl-space-space-twounits);
+  margin-left: 20px; /* use a fixed margin instead of a variable */
 }
+
 .navigation-links-text2 {
-  margin-left: var(--dl-space-space-twounits);
+  margin-left: 20px; /* use a fixed margin instead of a variable */
 }
 
-
-
-
-
-
-
-
-@media(max-width: 767px) {
-  .navigation-links-nav {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .navigation-links-text {
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navigation-links-text1 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-  .navigation-links-text2 {
-    margin-left: 0;
-    margin-bottom: var(--dl-space-space-unit);
-  }
-}
 </style>

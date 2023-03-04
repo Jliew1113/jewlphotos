@@ -1,11 +1,13 @@
 <template>
   <div class="home-container">
     <header data-role="Header" class="home-header">
-      <img
+      <router-link to="#">
+        <img
         alt="logo"
-        src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
+        src="./assets/jewl-logo.png"
         class="home-image"
-      />
+        />
+      </router-link>
       <div class="home-nav">
         <navigation-links rootClassName="rootClassName17"></navigation-links>
       </div>
@@ -244,7 +246,7 @@ export default {
 }
 .home-nav {
   flex: 0 0 auto;
-  display: flex;
+  display: block;
   align-items: center;
   flex-direction: row;
 }
