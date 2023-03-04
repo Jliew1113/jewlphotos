@@ -41,7 +41,7 @@
 }
 .page-header {
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   display: flex;
   max-width: 100%;
   align-items: center;
@@ -163,7 +163,7 @@
 }
 @media(max-width: 875px) {
   .page-container3 {
-    margin-left: 40px;
+    padding-left: 40px;
   }
   .page-container4 {
     align-items: center;
