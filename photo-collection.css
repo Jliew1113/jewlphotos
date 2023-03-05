@@ -131,24 +131,14 @@
   }
   .photo-collection-container3 {
     top: 0px;
-    flex: 0 0 auto;
     left: 0px;
     width: 40%;
-    height: 90%;
+    height: 100%;
     display: flex;
     position: absolute;
     align-items: flex-start;
     padding-left: 48px;
-  }
-  .photo-collection-container4 {
-    flex: 0 0 auto;
-    left: 0px;
-    width: 40%;
-    bottom: 90px;
-    height: 30%;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
+    flex-direction: column;
   }
   .photo-collection-container5 {
     top: 0px;
@@ -161,23 +151,7 @@
     align-items: flex-start;
     flex-direction: column;
   }
-  .photo-collection-container6 {
-    flex: 0 0 auto;
-    left: 0px;
-    width: 40%;
-    bottom: 0px;
-    height: 10%;
-    display: flex;
-    position: absolute;
-    align-items: flex-start;
-    padding-left: 48px;
-  }
-  .photo-collection-container7 {
-    display: flex;
-    align-self: center;
-    align-items: flex-start;
-    padding-left: 48px;
-  }
+
   .photo-collection-button {
     align-self: center;
   }
@@ -198,43 +172,26 @@
   }
   @media(max-width: 1200px) {
     .photo-collection-container3 {
-      width: 40%;
-    }
-    .photo-collection-container4 {
-      width: 40%;
+      width: 30%;
     }
     .photo-collection-container5 {
-      width: 60%;
-    }
-    .photo-collection-container6 {
-      width: 40%;
+      width: 70%;
     }
   }
   @media(max-width: 991px) {
+    .photo-collection-container2 {
+      flex-direction: column;
+    }
     .photo-collection-container3 {
       width: 100%;
-      height: 25%;
-    }
-    .photo-collection-container4 {
-      top: 215px;
-      width: 30%;
-      height: 70%;
-      padding-left: 0px;
+      height: 30%;
     }
     .photo-collection-container5 {
-      top: 215px;
       width: 100%;
       height: 70%;
+      position: absolute;
+      margin-top: 27vh;
       align-self: center;
-    }
-    .photo-collection-container6 {
-      width: 100%;
-      height: 5%;
-      padding-right: 48px;
-    }
-    .photo-collection-container7 {
-      margin-left: auto;
-      margin-right: auto;
     }
   }
   @media(max-width: 767px) {
@@ -250,17 +207,19 @@
       align-items: center;
       justify-content: center;
     }
-    .photo-collection-container6 {
-      padding-right: 48px;
-    }
     .photo-collection-footer {
       padding-left: 32px;
       padding-right: 32px;
+      padding-bottom: 5px;
     }
     .photo-collection-text {
       text-align: center;
       margin-left: 16px;
       margin-right: 16px;
+    }
+    .photo-collection-container3 {
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
   @media(max-width: 479px) {
@@ -270,30 +229,7 @@
     .photo-collection-mobile-menu {
       padding: 16px;
     }
-    .photo-collection-container2 {
-      height: 887px;
-    }
-    .photo-collection-container4 {
-      top: 670px;
-      width: 100%;
-      height: 20%;
-    }
-    .photo-collection-container5 {
-      top: 225px;
-      width: 100%;
-      height: 50%;
-    }
-    .photo-collection-container6 {
-      width: 100%;
-      height: 5%;
-    }
-    .photo-collection-container7 {
-      margin-left: auto;
-      margin-right: auto;
-    }
     .photo-collection-footer {
-      height: 48px;
-      padding: 16px;
       flex-direction: column;
     }
     .photo-collection-text {
@@ -348,6 +284,10 @@
     right: 0;
     border-radius: 3px 0 0 3px;
   }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
   
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover,
@@ -393,8 +333,9 @@
     width: 100%;
     height: 75%;
     background-color: #f6f6f6;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   .photo-canvas {
@@ -417,10 +358,9 @@
   .thumbnails {
     background-color: #f6f6f6;
     height: 15%;
-  }
-
-  .main .photo-canvas {
-    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Add a transparency effect for thumbnail images */
