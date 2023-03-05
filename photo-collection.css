@@ -5,22 +5,11 @@
     flex-direction: row;
   }
   .navigation-links-text1 {
-    margin-left: 5px;
+    margin-left: 32px;
   }
   .navigation-links-text2 {
-    margin-left: 5px;
+    margin-left: 32px;
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   @media(max-width: 767px) {
     .navigation-links-nav {
@@ -43,14 +32,16 @@
   .photo-collection-container {
     width: 100%;
     display: flex;
-    overflow: auto;
     min-height: 100vh;
+    overflow: auto;
     align-items: center;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
   }
   .photo-collection-header {
     width: 100%;
-    height: 16px;
+    height: 7vh;
     display: flex;
     max-width: 100%;
     align-items: center;
@@ -68,6 +59,9 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+  }
+  .photo-collection-nav a {
+    color: #272727;
   }
   .photo-collection-burger-menu {
     display: none;
@@ -130,7 +124,7 @@
   }
   .photo-collection-container2 {
     width: 100%;
-    height: auto;
+    height: 90vh;
     display: flex;
     position: relative;
     align-items: flex-start;
@@ -139,8 +133,8 @@
     top: 0px;
     flex: 0 0 auto;
     left: 0px;
-    width: 50%;
-    height: 60%;
+    width: 40%;
+    height: 90%;
     display: flex;
     position: absolute;
     align-items: flex-start;
@@ -149,7 +143,7 @@
   .photo-collection-container4 {
     flex: 0 0 auto;
     left: 0px;
-    width: 50%;
+    width: 40%;
     bottom: 90px;
     height: 30%;
     display: flex;
@@ -160,7 +154,7 @@
     top: 0px;
     flex: 0 0 auto;
     right: 0px;
-    width: 50%;
+    width: 60%;
     height: 100%;
     display: flex;
     position: absolute;
@@ -170,7 +164,7 @@
   .photo-collection-container6 {
     flex: 0 0 auto;
     left: 0px;
-    width: 50%;
+    width: 40%;
     bottom: 0px;
     height: 10%;
     display: flex;
@@ -192,20 +186,17 @@
   }
   .photo-collection-footer {
     width: 100%;
-    height: 64px;
+    height: 3vh;
     display: flex;
     max-width: 100%;
     align-items: center;
-    padding-top: 32px;
-    padding-left: 48px;
-    padding-right: 48px;
-    padding-bottom: 32px;
     justify-content: center;
+    flex-shrink: 0;
+  }
+  .photo-collection-footer span{
+    font-size: 0.75em;
   }
   @media(max-width: 1200px) {
-    .photo-collection-header {
-      height: 60px;
-    }
     .photo-collection-container3 {
       width: 40%;
     }
@@ -232,7 +223,7 @@
     }
     .photo-collection-container5 {
       top: 215px;
-      width: 70%;
+      width: 100%;
       height: 70%;
       align-self: center;
     }
@@ -313,4 +304,134 @@
       margin-bottom: 16px;
     }
   }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f6f6f6;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 8px;
+    color: #272727;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #272727;
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: right;
+    background-color: #f6f6f6;
+    padding: 2px 16px;
+    color: #272727;
+    height: 10%;
+  }
+  
+  .thumbnails:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* 4 columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  .main {
+    width: 100%;
+    height: 75%;
+    background-color: #f6f6f6;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo-canvas {
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo-canvas img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+  }
+
+  .thumbnails {
+    background-color: #f6f6f6;
+    height: 15%;
+  }
+
+  .main .photo-canvas {
+    padding-top: 32px;
+  }
+
+  /* Add a transparency effect for thumbnail images */
+  .demo {
+    opacity: 0.6;
+  }
+
+  .photo-canvas .demo {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+  }
+ 
   
