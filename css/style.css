@@ -212,25 +212,22 @@ p {
   position: absolute;
   font-family: 'Tw Cen', sans-serif;
   font-weight: 300;
-  top: 20px;
   left: 0;
   z-index: 999;
-  background: transparent;
+  background: #fff;
   padding: 15px 0;
   width: 100%;
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-header {
     background: #fff;
     top: 0;
   }
-  #fh5co-header img {
-    filter: invert(100%);
-  }
 }
 #fh5co-header #fh5co-logo {
   float: left;
-  line-height: 1.2;
+  width: 380px;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -253,6 +250,7 @@ p {
 }
 #fh5co-header #fh5co-main-nav {
   float: right;
+  margin-top: 5px;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header #fh5co-main-nav {
@@ -271,7 +269,7 @@ p {
 #fh5co-header #fh5co-main-nav ul li a {
   font-family: "Tw Cen", sans-serif;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.8);
+  color: #272727;
   text-decoration: none;
   margin-left: 30px;
   border-bottom: 2px solid transparent;
@@ -287,17 +285,10 @@ p {
 #fh5co-header.navbar-fixed-top {
   position: fixed !important;
   background: #fff;
-  -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  -ms-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
   top: 0;
   left: 0px;
 }
 
-#fh5co-header.navbar-fixed-top img {
-  filter: invert(100%);
-}
 
 #fh5co-header.navbar-fixed-top #fh5co-logo {
   float: left;
@@ -829,7 +820,7 @@ p {
 
 .fh5co-nav-toggle {
   position: absolute;
-  top: 8px;
+  top: 13px;
   right: 15px;
   z-index: 21;
   padding: 6px 0 0 0;
@@ -925,8 +916,8 @@ p {
 /*# sourceMappingURL=style.css.map */
 
 .logo {
-  width: 15%;
-  height: 15%;
+  width: 20%;
+  height: 20%;
   background: transparent;
 }
 

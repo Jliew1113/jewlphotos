@@ -39,22 +39,6 @@
   justify-content: space-between;
   align-items: stretch;
 }
-.page-header {
-  width: 100%;
-  height: 7vh;
-  display: flex;
-  max-width: 100%;
-  align-items: center;
-  padding-top: 24px;
-  padding-left: 48px;
-  padding-right: 48px;
-  padding-bottom: 24px;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  z-index: 100;
-  background-color: #fff;
-}
 .page-image {
   height: 2rem;
 }
@@ -125,24 +109,31 @@
 }
 .page-container2 {
   width: 100%;
-  height: 90vh;
+  height: 100%;
   display: flex;
   flex-grow: 1;
   align-items: flex-start;
   justify-content: center;
   flex-direction: row;
+  overflow-y: scroll;
 }
 .page-container3 {
   position: sticky;
   width: 20%;
-  height: 90vh;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 .page-text {
+  color: #D79B19;
+  font-family: 'Roboto', sans-serif;
   align-self: center;
+  font-size: 3.5em;
+  position: fixed;
+  left: 5%;
+  top: 45%;
 }
 .page-container4 {
   flex: 1;
@@ -161,44 +152,18 @@
   justify-content: center;
   flex-shrink: 0;
 }
-@media(max-width: 875px) {
+@media(max-width: 1100px) {
   .page-container3 {
     padding-left: 50px;
   }
   .page-container4 {
     align-items: center;
   }
+  .page-text {
+    size: 0.5em;
+  }
 }
 @media(max-width: 767px) {
-  .page-header {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  .page-nav {
-    display: none;
-  }
-  .page-burger-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .page-footer {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  .page-text1 {
-    text-align: center;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-  .page-container3 {
-    padding-left: 40px;
-  }
-  .page-text {
-    size: 1.5em;
-  }
-}
-@media(max-width: 479px) {
   .page-header {
     padding: 16px;
   }
@@ -220,7 +185,10 @@
     padding-left: 0px;
   }
   .page-text {
-    font-size: 2em;
+    font-size: 4em;
+    position: absolute;
+    top: auto;
+    left: auto;
   }
   .page-container4 {
     width: 100%;
@@ -237,18 +205,17 @@
     margin-bottom: 16px;
   }
 }
-
       .photo-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
         gap: 20px;
         justify-content: center;
         align-items: center;
         padding: 40px;
       }
       .photo-canvas {
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        aspect-ratio: 1/1;
         background-color: #f6f6f6;
         position: relative;
         transition: all 0.5s ease-in-out;

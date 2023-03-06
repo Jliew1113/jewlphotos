@@ -29,103 +29,11 @@
     }
   }
   
-  .photo-collection-container {
-    width: 100%;
-    display: flex;
-    min-height: 100vh;
-    overflow: auto;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-  }
-  .photo-collection-header {
-    width: 100%;
-    height: 7vh;
-    display: flex;
-    max-width: 100%;
-    align-items: center;
-    padding-top: 32px;
-    padding-left: 48px;
-    padding-right: 48px;
-    padding-bottom: 32px;
-    justify-content: space-between;
-  }
-  .photo-collection-image {
-    height: 2rem;
-  }
-  .photo-collection-nav {
-    flex: 0 0 auto;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-  }
-  .photo-collection-nav a {
-    color: #272727;
-  }
-  .photo-collection-burger-menu {
-    display: none;
-  }
-  .photo-collection-icon {
-    width: 16px;
-    height: 16px;
-    display: flex;
-  }
-  .photo-collection-mobile-menu {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100vh;
-    display: none;
-    padding: 32px;
-    z-index: 100;
-    position: absolute;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
-  }
-  .photo-collection-nav1 {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-  }
-  .photo-collection-container1 {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 48px;
-    justify-content: space-between;
-  }
-  .photo-collection-image1 {
-    height: 2rem;
-  }
-  .photo-collection-close-mobile-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .photo-collection-icon02 {
-    width: 16px;
-    height: 16px;
-  }
-  .photo-collection-icon04 {
-    width: 16px;
-    height: 16px;
-    margin-right: 32px;
-  }
-  .photo-collection-icon06 {
-    width: 16px;
-    height: 16px;
-    margin-right: 32px;
-  }
-  .photo-collection-icon08 {
-    width: 16px;
-    height: 16px;
-  }
   .photo-collection-container2 {
     width: 100%;
     height: 90vh;
     display: flex;
+    flex-grow: 1;
     position: relative;
     align-items: flex-start;
   }
@@ -246,7 +154,7 @@
   }
   
   /* Position the image container (needed to position the left and right arrows) */
-  .container {
+  .main-container {
     position: relative;
     padding: 0;
     width: 100%;
@@ -322,6 +230,7 @@
   .column {
     float: left;
     width: 25%;
+    height: 100%;
   }
   
   .active,
@@ -336,11 +245,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+  }
+
+  .mySlides{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .photo-canvas {
     width: 100%;
-    height: auto;
+    aspect-ratio: 1/1;
     background-color: #f6f6f6;
     position: relative;
     overflow: hidden;
