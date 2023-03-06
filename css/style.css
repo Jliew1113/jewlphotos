@@ -24,21 +24,21 @@ body.fh5co-overflow {
 
 ::-webkit-selection {
   color: #fff;
-  background: #f9ad81;
+  background: #d79B19;
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #f9ad81;
+  background: #d79B19;
 }
 
 ::selection {
   color: #fff;
-  background: #f9ad81;
+  background: #d79B19;
 }
 
 a {
-  color: #f9ad81;
+  color: #d79B19;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -86,9 +86,9 @@ p {
 }
 
 .btn-primary {
-  background: #f9ad81;
+  background: #d79B19;
   color: #fff;
-  border: 2px solid #f9ad81;
+  border: 2px solid #d79B19;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #f89d69 !important;
@@ -96,11 +96,11 @@ p {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #f9ad81;
-  border: 2px solid #f9ad81;
+  color: #d79B19;
+  border: 2px solid #d79B19;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #f9ad81;
+  background: #d79B19;
   color: #fff;
 }
 
@@ -205,7 +205,7 @@ p {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #f9ad81;
+  border-color: #d79B19;
 }
 
 #fh5co-header {
@@ -224,7 +224,7 @@ p {
     background: #fff;
     top: 0;
   }
-  img {
+  #fh5co-header img {
     filter: invert(100%);
   }
 }
@@ -249,7 +249,7 @@ p {
   }
 }
 #fh5co-header #fh5co-logo a span {
-  color: #f9ad81;
+  color: #d79B19;
 }
 #fh5co-header #fh5co-main-nav {
   float: right;
@@ -278,11 +278,11 @@ p {
 }
 #fh5co-header #fh5co-main-nav ul li a:hover {
   text-decoration: none;
-  color: #f9ad81;
+  color: #d79B19;
 }
 #fh5co-header #fh5co-main-nav ul li.active a {
   color: #fff;
-  border-bottom: 2px solid #f9ad81;
+  border-bottom: 2px solid #d79B19;
 }
 #fh5co-header.navbar-fixed-top {
   position: fixed !important;
@@ -318,10 +318,10 @@ p {
 }
 #fh5co-header.navbar-fixed-top #fh5co-main-nav ul li a:hover {
   text-decoration: none;
-  color: #f9ad81;
+  color: #d79B19;
 }
 #fh5co-header.navbar-fixed-top #fh5co-main-nav ul li.active a {
-  color: #f9ad81;
+  color: #d79B19;
   border-bottom: 2px solid transparent;
 }
 
@@ -409,8 +409,8 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: .3;
-  background: #444853;
+  opacity: .4;
+  background: #2c2a28;
 }
 #fh5co-home .flexslider .flex-control-nav,
 #fh5co-home .flexslider .flex-direction-nav {
@@ -430,15 +430,15 @@ p {
   right: 0;
   bottom: 0;
   z-index: 9999;
-  width: 275px;
-  background: #444853;
+  width: 100%;
+  background: rgba(145, 134, 119, 0.95);
   overflow-y: auto;
   padding: 50px 30px 30px 30px;
-  -moz-transform: translateX(275px);
-  -webkit-transform: translateX(275px);
-  -ms-transform: translateX(275px);
-  -o-transform: translateX(275px);
-  transform: translateX(275px);
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
 }
 #fh5co-offcanvas .fh5co-offcanvas-close {
   position: absolute;
@@ -469,6 +469,7 @@ p {
 #fh5co-offcanvas nav ul {
   padding: 0;
   margin: 0;
+  margin-top: 16px;
 }
 #fh5co-offcanvas nav ul li {
   padding: 0;
@@ -477,14 +478,16 @@ p {
 }
 #fh5co-offcanvas nav ul li a {
   display: block;
-  color: rgba(255, 255, 255, 0.5);
+  color: #272727;
+  font-size: 1.5em;
   padding: 7px 0;
+  text-align: right;
 }
 #fh5co-offcanvas nav ul li a:hover {
-  color: #f9ad81;
+  color: #d79B19;
 }
 #fh5co-offcanvas nav ul li.active a {
-  color: #f9ad81;
+  color: #d79B19;
 }
 .offcanvas-visible #fh5co-offcanvas {
   -moz-transform: translateX(0px);
@@ -566,7 +569,7 @@ p {
   -moz-osx-font-smoothing: grayscale;
   content: "\e114";
   font-size: 50px;
-  color: #f9ad81;
+  color: #d79B19;
 }
 @media screen and (max-width: 992px) {
   #fh5co-about .fh5co-text.with-plus:after {
@@ -705,7 +708,7 @@ p {
   margin-left: -10px;
   height: 2px;
   left: 50%;
-  background: #f9ad81;
+  background: #d79B19;
 }
 .img-grid:hover > a {
   opacity: 1;
@@ -748,7 +751,7 @@ p {
   text-decoration: none;
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
-  background: #f9ad81;
+  background: #d79B19;
 }
 .fh5co-nav-toggle:hover, .fh5co-nav-toggle:focus, .fh5co-nav-toggle:active {
   outline: none;
