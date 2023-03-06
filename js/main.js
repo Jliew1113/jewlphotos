@@ -263,13 +263,14 @@
 			    	}, 500);	
 			    	
 			   }
+			   else{
+				event.redirectPage();
+				}
 			   event.preventDefault();
 
 			});
 		}
-		else{
-			event.redirectPage();
-		}
+		
 	};
 
 	// Reflect scrolling in navigation

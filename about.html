@@ -1,93 +1,168 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
-}
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>jewl</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="jewl photography site" />
+	<meta name="keywords" content="photography, blog, story, nature, photos, people, comfort, energy, passion, life"/>
+	<meta name="author" content="jliew" />
 
-.topnav {
-  overflow: hidden;
-  background-color: #ffffff;
-}
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-.topnav a {
-  float: right;
-  display: block;
-  color: #272727;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Google Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- Animate -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Flexslider -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Icomoon -->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
 
-.topnav a.home {
-    float:left; 
-}
+	<link rel="stylesheet" href="css/style.css">
 
-.topnav a:hover {
-    background-color:#d79b19; 
-}
 
-.topnav .icon {
-    display:none; 
-}
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
 
-@media screen and (min-width: 601px) {
-    /* adjust font size for larger screens */
-    body {
-      font-size: 18px;
-    }
-}
-    
-@media screen and (max-width:600px) {
-    body {
-        font-size: 14px;
-    }
-    .topnav a:not(:first-child) {display:none;}
-    .topnav a.icon {
-        float:right;display:block; 
-    }
-}
-@media screen and (max-width:600px) {
-    .topnav.responsive {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-        background-color: #918677;
-        backdrop-filter: blur(5px);
-    }
-    .topnav.responsive .icon{
-        position:absolute;right:0;top:0; 
-    }
-    .topnav.responsive a{
-        float:none;display:block;text-align:right; 
-    }
-    
-    .topnav.responsive a.home{
-        text-align:left; 
-    }
-}
-</style>
-</head>
-<body>
+	</head>
+	<body>
+	
+	<div id="fh5co-header">
+		<div class="container-fluid">
+			<!-- Mobile Toggle Menu Button -->
+			<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+			<div id="fh5co-logo">
+				<a href="index.html"><img class="logo" src="./res/logo.png" alt="logo"></a>
+			</div>
+			<nav id="fh5co-main-nav">
+				<ul>
+					<li><a href="./photos.html" data-nav-section="photos">photos</a></li>
+					<li><a href="./writings.html" data-nav-section="writings">writings</a></li>
+					<li><a href="./about.html" data-nav-section="about">about</a></li>
+					<li><a href="./contact.html" data-nav-section="contact">contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div id="fh5co-main">
+		<div class="fh5co-overlay-mobile"></div>
+		<div id="fh5co-home" class="js-fullheight" data-section="home">
 
-<div class="topnav" id="myTopnav">
-<a href="" class="home">Home</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-<a href="#news">News</a>
-<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-<i class="fa fa-bars"></i></a></div>
+			<div class="flexslider">
+				
+				<div class="fh5co-overlay"></div>
+				<div class="fh5co-text">
+					<div class="container">
+						<div class="row text-left">
+							<div class="col-md-offset-0.5">
+								<h1 class="animate-box">about me</h1>
+							</div>
+							<div class="col-md-8", style="padding: 0;">
+								<div class="fh5co-go animate-box">
+									<p class="fh5co-lead animate-box", style="color: #f6f6f6;">
+										hey there! it's really nice meeting you!
+									</p>
+									<a href="#" class="js-fh5co-next">
+										<span><i class="icon-arrow-down2"></i></span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  	<ul class="slides">
+			   	<li style="background-image: url(images/slide_2.jpg);" data-stellar-background-ratio="0.5"></li>
+			  	</ul>
 
-<script>function myFunction() {var x = document.getElementById("myTopnav");if (x.className === "topnav") {x.className += " responsive";document.querySelector(".fa").classList.remove("fa-bars");document.querySelector(".fa").classList.add("fa-times");} else {x.className = "topnav";document.querySelector(".fa").classList.remove("fa-times");document.querySelector(".fa").classList.add("fa-bars");}}</script>
+			</div>
+		</div>
 
-<h2>Responsive Top Navigation Menu Example</h2><p>Resize the browser window to see how it works.</p><p>Click on the icon in the top right corner to expand the menu.</p><button onclick="changeColor()">Change Color</button><script>function changeColor() {document.body.style.backgroundColor = document.body.style.backgroundColor == 'blue' ? 'white' : 'blue';}</script>
-</body>
+		<div id="fh5co-content">
+			<div class="container">
+				<div class="row r-pb">
+					<div class="section-heading">
+						<p class="fh5co-lead animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+					</div>
+				</div>
+
+				<div class="row">
+					<figure class="animate-box">
+						<img src="images/slide_3.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive">
+					</figure>
+				</div>
+
+				<div class="row r-pb">
+					<div class="section-heading">
+						<p class="fh5co-lead animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+					</div>
+				</div>
+
+				<div class="row r-pb">
+					<div class="section-heading">
+						<p class="fh5co-lead animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+					</div>
+				</div>
+				
+				<div class="row">
+					<figure class="animate-box">
+						<img src="images/slide_3.jpg" alt="Free HTML5 Template by FREEHTML5.co" class="img-responsive">
+					</figure>
+				</div>
+
+				<div class="row r-pb">
+					<div class="section-heading">
+						<p class="fh5co-lead animate-box">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+					</div>
+				</div>
+	
+			</div>
+		</div>
+
+		<div id="fh5co-footer">
+            <p>&copy; jewl by jliew | all rights reserved</p>
+        </div>
+
+	</div> <!-- END fh5co-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+	<script src="js/big.js"></script>
+
+	</body>
 </html>
+
