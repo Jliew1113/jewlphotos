@@ -580,13 +580,17 @@ p {
 
 #fh5co-footer {
   font-family: "Tw Cen", sans-serif;
-  background: #f6f6f6;
-  padding: 4em 0;
+  background: #fff;
+  padding: 16px 0;
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 @media screen and (max-width: 768px) {
   #fh5co-footer {
-    padding: 3em 0;
+    padding: 16px 0;
   }
 }
 #fh5co-footer a {
@@ -596,7 +600,8 @@ p {
   text-decoration: underline;
 }
 #fh5co-footer p {
-  margin-bottom: 10px;
+  color: #272727;
+  margin: 0;
 }
 #fh5co-footer .fh5co-footer-widget {
   margin-bottom: 30px;
