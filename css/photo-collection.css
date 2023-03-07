@@ -119,10 +119,6 @@ overflow: scroll;
 .caption-container {
   font-size: 1em;
 }
-.numbertext{
-  position: fixed;
-  bottom: 0%;
-}
 }
 
 * {
