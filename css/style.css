@@ -673,7 +673,7 @@ p {
 }
 .img-grid a > div {
   position: absolute;
-  top: 38%;
+  align-self: center;
   text-align: center;
   width: 100%;
   -webkit-transition: 0.8s, ease-out;
