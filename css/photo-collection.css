@@ -15,11 +15,11 @@ overflow: scroll;
   height: 100%;
   display: flex;
   position: absolute;
-  align-items: flex-start;
+  align-items: center;
   padding-left: 24px;
   padding-right: 24px;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   background-color: transparent;
 }
 .photo-collection-container5 {
