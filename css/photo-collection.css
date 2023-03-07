@@ -11,7 +11,7 @@
   top: 0;
   flex: 0 0 auto;
   left: 0px;
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   position: absolute;
@@ -38,7 +38,6 @@
 /* Container for image text */
 .caption-container {
   text-align: left;
-  align-self: center;
   background-color: transparent;
   padding: 2px;
   color: #272727;
