@@ -45,7 +45,7 @@ a {
   transition: 0.5s;
 }
 a:hover, a:focus, a:active {
-  color: #f67d38;
+  color: #d79B19;
   outline: none;
   text-decoration: none;
 }
@@ -92,8 +92,8 @@ p {
   border: 2px solid #d79B19;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #f89d69 !important;
-  border-color: #f89d69 !important;
+  background: #d79B19 !important;
+  border-color: #d79B19 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
@@ -214,7 +214,7 @@ p {
   font-family: 'Tw Cen', sans-serif;
   font-weight: 300;
   left: 0;
-  z-index: 999;
+  z-index: 10;
   background: #fff;
   padding: 15px 0;
   width: 100%;
@@ -586,7 +586,7 @@ p {
   }
 }
 #fh5co-footer a {
-  color: #f67d38;
+  color: #d79B19;
 }
 #fh5co-footer a:hover {
   text-decoration: underline;
