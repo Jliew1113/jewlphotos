@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	  <title>jewl | the struggle</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta name="description" content="jewl photography site" />
+	  <meta name="keywords" content="photography, blog, story, nature, photos, people, comfort, energy, passion, life"/>
+	  <meta name="author" content="jliew" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">    
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	  <!-- Google Fonts -->
+	  <link href="https://fonts.cdnfonts.com/css/tw-cen-mt-condensed" rel="stylesheet">
+	  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,300,700' rel='stylesheet' type='text/css'>
+	  <!-- Animate -->
+	  <link rel="stylesheet" href="css/animate.css">
+	  <!-- Flexslider -->
+	  <link rel="stylesheet" href="css/flexslider.css">
+	  <!-- Icomoon -->
+	  <link rel="stylesheet" href="css/icomoon.css">
+	  <!-- Bootstrap  -->
+	  <link rel="stylesheet" href="css/bootstrap.css">
+
+	  <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/photo-collection.css">
+
+    <!-- Modernizr JS -->
+	 <script src="js/modernizr-2.6.2.min.js"></script>
+    </head>
+  <body>
+    <div id="fh5co-header" class="navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Mobile Toggle Menu Button -->
+        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+        <div id="fh5co-logo">
+          <a href="./"><img class="logo" src="./res/logo.png" alt="logo"></a>
+        </div>
+        <nav id="fh5co-main-nav">
+          <ul>
+            <li><a href="photos">photos</a></li>
+            <li><a href="writings">writings</a></li>
+            <li><a href="about">about</a></li>
+            <li><a href="contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="photo-collection-container2">
+
+        <div class="photo-collection-container3">
+                <h1 class="page-text">the struggle</h1>
+                <!-- Image text -->
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+                <!-- Thumbnail images -->
+                <div class="row thumbnails">
+                  <div class="column">
+                    <div class="photo-canvas">
+                        <img class="demo cursor" src="./res/struggle/IMG_6339.jpg" onclick="currentSlide(1)" alt="As I sit here in the quiet of my home, surrounded by the gentle hum of my plants and the soft glow of my favorite candles, I can't help but reflect on the true beauty of peace. ">
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="photo-canvas">
+                        <img class="demo cursor" src="./res/struggle/IMG_6355.jpg" onclick="currentSlide(2)" alt=" I am able to truly be present in the moment, savoring every sensation and emotion without the weight of stress and anxiety bearing down on me. It's a feeling of lightness and freedom, as though I am able to spread my wings and soar high above the worries of the world below.">
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="photo-canvas">
+                        <img class="demo cursor" src="./res/struggle/IMG_7158.jpg" onclick="currentSlide(3)" alt="But the most beautiful thing about peace is that it is always within reach, no matter how chaotic the world around us may seem, taking the time to slow down, breathe deeply, and reconnect with the beauty and wonder of the world around us.">
+                    </div>   
+                  </div>
+                  <div class="column">
+                    <div class="photo-canvas">
+                        <img class="demo cursor" src="./res/struggle/IMG_7174-Edit.jpg" onclick="currentSlide(4)" alt="why not close your eyes, take a deep breath, allow the peacefulness to wash over you, let the incredible power of inner peace takes you onto the journey ahead?">
+                    </div>
+                  </div>
+                </div>
+        </div>
+  
+        <div class="photo-collection-container5">
+                  <div class="carousel-container">
+  
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+                      <!-- Full-width images with number text -->
+                      <div class="mySlides">
+                        <div class="photo-canvas">
+                          <img src="./res/struggle/IMG_6339.jpg">
+                          <div class="numbertext">#1<br>melbourne, au<br>2016</div>
+                        </div>
+                      </div>
+                    
+                      <div class="mySlides">
+                        <div class="photo-canvas">
+                          <img src="./res/struggle/IMG_6355.jpg">
+                          <div class="numbertext">#2<br>echuca, au<br>2020</div>
+                        </div>
+                      </div>
+                    
+                      <div class="mySlides">
+                        <div class="photo-canvas">
+                          <img src="./res/struggle/IMG_7158.jpg">
+                          <div class="numbertext">#3<br>kuala lumpur, my<br>2021</div>
+                        </div>
+                      </div>
+                    
+                      <div class="mySlides">
+                        <div class="photo-canvas">
+                          <img src="./res/struggle/IMG_7174-Edit.jpg">
+                          <div class="numbertext">#4<br>melbourne, au<br>2016</div>
+                        </div>
+                      </div>
+                    
+                    </div>
+        </div>
+  
+        <div id="fh5co-footer" class="footer">
+          <p>&copy; jewl by jliew | all rights reserved</p>
+      </div>
+      </div>
+    </div>
+    
+        
+        <!-- jQuery -->
+	      <script src="js/jquery.min.js"></script>
+	      <!-- jQuery Easing -->
+	      <script src="js/jquery.easing.1.3.js"></script>
+	      <!-- Bootstrap -->
+	      <script src="js/bootstrap.min.js"></script>
+	      <!-- Waypoints -->
+	      <script src="js/jquery.waypoints.min.js"></script>
+	      <!-- Stellar Parallax -->
+	      <script src="js/jquery.stellar.min.js"></script>
+	      <!-- Flexslider -->
+	      <script src="js/jquery.flexslider-min.js"></script>
+	      <!-- Main JS -->
+	      <script src="js/main.js"></script>
+        <script src="js/photo-collection.js"></script>
+        </body>
+</html>
