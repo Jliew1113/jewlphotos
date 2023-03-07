@@ -15,7 +15,7 @@
   height: 100%;
   display: flex;
   position: absolute;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 32px;
   padding-left: 24px;
   padding-right: 24px;
@@ -25,11 +25,12 @@
 }
 .photo-collection-container5 {
   top: 0;
+  flex: 0 0 auto;
   right: 0px;
   width: 50%;
   height: 90%;
   display: flex;
-  position: fixed;
+  position: absolute;
   align-items: flex-start;
   background-color: #f6f6f6;
 }
@@ -37,6 +38,7 @@
 /* Container for image text */
 .caption-container {
   text-align: left;
+  align-self: center;
   background-color: transparent;
   padding: 2px;
   color: #272727;

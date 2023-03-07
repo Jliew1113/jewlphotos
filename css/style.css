@@ -710,7 +710,7 @@ p {
   opacity: 1;
 }
 .img-grid:hover > a > div {
-  align-self: center;
+  bottom: 35%;
 }
 
 .section-heading .fh5co-section-title {
