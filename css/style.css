@@ -673,7 +673,6 @@ p {
 }
 .img-grid a > div {
   position: absolute;
-  align-self: start;
   text-align: center;
   width: 100%;
   -webkit-transition: 0.8s, ease-out;
@@ -711,7 +710,7 @@ p {
   opacity: 1;
 }
 .img-grid:hover > a > div {
-  bottom: 20px;
+  top: 30%;
 }
 
 .section-heading .fh5co-section-title {
