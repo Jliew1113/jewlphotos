@@ -15,7 +15,7 @@
   height: 100%;
   display: flex;
   position: absolute;
-  align-items: flex-start;
+  align-items: space-evenly;
   padding-top: 32px;
   padding-left: 24px;
   padding-right: 24px;
