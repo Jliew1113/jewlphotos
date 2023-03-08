@@ -70,11 +70,14 @@
 
 .footer {
   width: 100%;
-  background-color: transparent;
   position: fixed;
   bottom: 0;
   text-align: center;
   z-index: 0;
+}
+
+.footer p {
+  background-color: #fff;
 }
 
 * {
