@@ -572,7 +572,7 @@ p {
 
 #fh5co-footer {
   font-family: "Tw Cen", sans-serif;
-  background: #fff;
+  background: transparent;
   padding: 16px 0;
   font-size: 16px;
   display: flex;
