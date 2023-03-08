@@ -73,11 +73,8 @@
   position: fixed;
   bottom: 0;
   text-align: center;
+  align-items: flex-end;
   z-index: 0;
-}
-
-.footer p {
-  background-color: #fff;
 }
 
 * {
