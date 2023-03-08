@@ -501,7 +501,7 @@ p {
 #fh5co-contact,
 #fh5co-testimony,
 #fh5co-content {
-  padding: 7em 3em 0 0;
+  padding: 7em 0 3em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-portfolio,
@@ -509,7 +509,7 @@ p {
   #fh5co-contact,
   #fh5co-testimony,
   #fh5co-content {
-    padding: 4em 1em 0 0;
+    padding: 4em 0 1em 0;
   }
 }
 
