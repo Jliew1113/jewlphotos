@@ -764,7 +764,7 @@ p {
   height: 3px;
   color: #535659;
   font: bold 14px/.4 Helvetica;
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-indent: -55px;
   background: #535659;
   transition: all .2s ease-out;
@@ -821,7 +821,7 @@ p {
 
 .fh5co-nav-toggle {
   position: absolute;
-  top: 13px;
+  top: 5px;
   right: 15px;
   z-index: 21;
   padding: 1px 0 0 0;
