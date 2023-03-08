@@ -63,9 +63,9 @@ p {
   margin-right: 4px;
   margin-bottom: 4px;
   font-family: "Tw Cen MT", sans-serif;
-  font-size: 12px;
+  font-size: 100%;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: 700;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -87,9 +87,9 @@ p {
 }
 
 .btn-primary {
-  background: #d79B19;
-  color: #fff;
-  border: 2px solid #d79B19;
+  background: #CFC8BF;
+  color: #272727;
+  border: 2px solid #CFC8BF;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #d79B19 !important;
@@ -97,12 +97,12 @@ p {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #d79B19;
-  border: 2px solid #d79B19;
+  color: #CFC8BF;
+  border: 2px solid #CFC8BF;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #d79B19;
-  color: #fff;
+  background: #CFC8BF;
+  color: #272727;
 }
 
 .btn-success {
@@ -423,7 +423,7 @@ p {
   bottom: 0;
   z-index: 9999;
   width: 100%;
-  background: rgba(145, 134, 119, 0.95);
+  background: rgba(207, 200, 191, 0.95);
   overflow-y: auto;
   padding: 50px 30px 30px 30px;
   -moz-transform: translateX(100%);
@@ -450,7 +450,7 @@ p {
   -moz-osx-font-smoothing: grayscale;
   content: "\e117";
   font-size: 30px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(145, 134, 119, 0.5);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -494,7 +494,7 @@ p {
 #fh5co-contact,
 #fh5co-testimony,
 #fh5co-content {
-  padding: 7em 0;
+  padding: 3em 0;
 }
 @media screen and (max-width: 768px) {
   #fh5co-portfolio,
@@ -502,7 +502,7 @@ p {
   #fh5co-contact,
   #fh5co-testimony,
   #fh5co-content {
-    padding: 4em 0;
+    padding: 1em 0;
   }
 }
 
@@ -525,7 +525,7 @@ p {
   }
 }
 #fh5co-about .fh5co-text .fh5co-meta {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(207, 200, 191, 0.5);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 24px;
@@ -687,8 +687,7 @@ p {
   text-transform: lowercase;
 }
 .img-grid a .fh5co-meta {
-  color: rgba(255, 255, 255, 0.4);
-  font-size: 24px;
+  color: rgba(207, 200, 191);
   font-weight: 400;
   letter-spacing: 2px;
   display: block;
