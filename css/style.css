@@ -422,15 +422,15 @@ p {
   right: 0;
   bottom: 0;
   z-index: 9999;
-  width: 100vw;
+  width: 100%;
   background: rgba(145, 134, 119, 0.95);
   overflow-y: auto;
   padding: 50px 30px 30px 30px;
-  -moz-transform: translateX(100vw);
-  -webkit-transform: translateX(100vw);
-  -ms-transform: translateX(100vw);
-  -o-transform: translateX(100vw);
-  transform: translateX(100vw);
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
 }
 #fh5co-offcanvas .fh5co-offcanvas-close {
   position: absolute;
