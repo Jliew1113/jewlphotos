@@ -425,7 +425,7 @@ p {
   width: 100%;
   background: rgba(145, 134, 119, 0.95);
   overflow-y: auto;
-  padding: 50px 30px 30px 30px;
+  padding: 50px 30px 30px 50px;
   -moz-transform: translateX(100%);
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
