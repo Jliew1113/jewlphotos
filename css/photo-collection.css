@@ -54,6 +54,7 @@
   width: 100%;
   position: relative;
   flex-shrink: 1;
+  bottom: 2%;
 }
 
 .thumbnails {
@@ -164,8 +165,8 @@
 }
 
 .photo-canvas img {
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
 }
 
