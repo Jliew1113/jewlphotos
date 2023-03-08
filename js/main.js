@@ -111,7 +111,7 @@
 
 	};
 
-	// Click outside of offcanvass
+	// Click outside of offcanvas
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
@@ -235,7 +235,7 @@
 
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
-			}, 500);
+			}, 0);
 			
 			return false;
 		});
