@@ -95,7 +95,6 @@ p {
 .btn-primary {
   background: rgb(207, 200, 191, 0.7);
   color: #272727;
-  border: 2px solid rgb(207, 200, 191, 0.7);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #d79B19 !important;
@@ -104,7 +103,6 @@ p {
 .btn-primary.btn-outline {
   background: transparent;
   color: #CFC8BF;
-  border: 2px solid #CFC8BF;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
   background: #CFC8BF;
